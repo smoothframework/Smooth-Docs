@@ -54,9 +54,8 @@
 
    aside {
       position: fixed;
-      top: 0; 
-      left: 0; 
       bottom: 0;
+      right: 0;
       width: 200px;
       overflow: auto;
       -webkit-overflow-scrolling: touch;
@@ -82,231 +81,100 @@
     </head>
     <body onload="prettyPrint()">
          <section class="container-narrow">
-          <a href="https://github.com/KRachev/Smooth" target="blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>  
+          <a href="https://github.com/KRachev/Smooth" target="blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
                   <div class="masthead">
-                    <ul class="nav nav-pills pull-right">
-                      <li><a href="http://smoothphp.com" target="blank">Our site</a></li>
-                      <li class="active"><a href="#">Docs</a></li>
-                    </ul>
-                    <h3 class="muted">Smooth Php Framework</h3>
+                    <h3 class="muted">Smooth</h3>
+                    <div class="navbar">
+                      <div class="navbar-inner">
+                        <div class="container">
+                          <ul class="nav">
+                            <li class="dropdown">
+                              <a href="#" id="dLabel" role="button" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Get Started <b class="caret"></b></a>
+                              <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+                                <li><a href="#Overview">Overview</a></li>
+                                <li><a href="#Requirements">Requirements</a></li>
+                                <li><a href="#InstallationConfig">Installation and Configuration</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Additional</li>
+                                <li><a href="#Variables">Variables</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">MVC <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#Mvc-Model">Model</a></li>
+                                <li><a href="#Mvc-View">View</a></li>
+                                <li><a href="#Mvc-Controller">Controller</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Libraries <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#Libraries-Cache">Cache</a></li>
+                                <li><a href="#Libraries-Cookie">Cookie</a></li>
+                                <li><a href="#Libraries-Crypt">Crypt</a></li>
+                                <li><a href="#Libraries-Db">Db</a></li>
+                                <li><a href="#Libraries-Form">Form</a></li>
+                                <li><a href="#Libraries-Frontend">Frontend</a></li>
+                                <li><a href="#Libraries-Generator">Generator</a></li>
+                                <li><a href="#Libraries-Math">Math</a></li>
+                                <li><a href="#Libraries-Security">Security</a></li>
+                                <li><a href="#Libraries-Session">Session</a></li>
+                                <li><a href="#Libraries-Url">Url</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Routing <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#Routing-Default">Default</a></li>
+                                <li><a href="#Routing-Custom">Custom</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#Database-Configuration">Configuration</a></li>
+                                <li><a href="#Database-Connection">Connection</a></li>
+                                <li><a href="#Database-Queries">Queries</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Usage</li>
+                                <li><a href="#Database-Library">Library</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#Application-Configuration">Configuration</a></li>
+                                <li><a href="#Application-App">Application</a></li>
+                                <li><a href="#Application-System">System</a></li>
+                                <li><a href="#Application-Public">Public</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Tests</li>
+                                <li><a href="#Application-Tests">Tests with PHPUnit</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div><!-- /.navbar -->
                   </div>
-            
-                  <hr>
             
                   <div class="jumbotron">
                     <h1><strong style="color: #97ca47;">Smooth</strong> php framework documentation!</h1>
                     <p class="lead">Our team wishes you great developing hours using Smooth.</p>
-                    <a class="btn btn-large btn-success" href="http://downloads.smoothphp.com/Smooth-0.0.1.zip">Download Smooth 1.0.2</a>
+                    <a class="btn btn-large btn-success" href="http://downloads.smoothphp.com/Smooth-1.0.3.zip">Download Smooth 1.0.3</a>
                     <br><br>
-                    <p><a href="http://downloads.smoothphp.com/Smooth-0.0.1plusDocs.zip">Click here</a> and get Smooth 1.0.2 + docs.</p>
+                    <p><a href="http://downloads.smoothphp.com/Smooth-1.0.3plusDocs.zip">Click here</a> and get Smooth 1.0.3 + docs.</p>
                   </div>
                                      
                   <!-- <footer class="footer"> -->
                     <!-- <p>&copy; Smoothphp framework by <a href="#">Konstantin Rachev</a></p> -->
                   <!-- </footer> -->
                   
-            </section>            
-            <aside class="interface">
-                <a href="#Get-started">Get Started</a><br>
-                <a href="#Overview">Overview</a><br>
-                <a href="#Change-log">Change Log</a><br>
-                <a href="#Requirements">Requirements</a><br>
-                <a href="#Installation">Installation</a><br>
-                <a href="#Configuration">Configuration</a><br>
-                <a href="#Variables">Variables</a><br>
-                <ul style="list-style: none;">
-                  <li>- <a href="#Variables-Basepath">BASEPATH</a></li>
-                  <li>- <a href="#Variables-Apppath">APPATH</a></li>
-                  <li>- <a href="#Variables-Syspath">SYSPATH</a></li>
-                  <li>- <a href="#Variables-Webpath">WEBPATH</a></li>
-                  <li>- <a href="#Variables-Controller">CONTROLLER</a></li>
-                  <li>- <a href="#Variables-Smooth-v">SMOOTH_V</a></li>
-                </ul>
-                
-                <a href="#Mvc">MVC</a>
-                <ul style="list-style: none;">
-                  <li>– <a href="#Mvc-Model">Model</a></li>
-                  <li>– <a href="#Mvc-View">View</a></li>
-                  <li>– <a href="#Mvc-Controller">Controller</a></li>
-                </ul>
-                        
-                <a href="#Libraries">Libraries</a>
-                <ul style="list-style: none;">
-                  <!-- <li>– <a href="#Libraries-Cache">Cache</a></li> -->
-                  <!-- <li>– <a href="#Libraries-Config">Config</a></li> -->
-                  <li>– <a href="#Libraries-Cookie">Cookie</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Cookie-set">set</a></li>
-                          <li><a href="#Libraries-Cookie-get">get</a></li>
-                          <li><a href="#Libraries-Cookie-delete">delete</a></li>
-                      </ul>
-                  <li>– <a href="#Libraries-Crypt">Crypt</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Crypt-sha1">sha1</a></li>
-                          <li><a href="#Libraries-Crypt-sha224">sha224</a></li>
-                          <li><a href="#Libraries-Crypt-sha256">sha256</a></li>
-                          <li><a href="#Libraries-Crypt-sha384">sha384</a></li>
-                          <li><a href="#Libraries-Crypt-sha512">sha512</a></li>
-                          <li><a href="#Libraries-Crypt-md2">md2</a></li>
-                          <li><a href="#Libraries-Crypt-md4">md4</a></li>
-                          <li><a href="#Libraries-Crypt-md5">md5</a></li>
-                          <li><a href="#Libraries-Crypt-ripemd128">ripemd128</a></li>
-                          <li><a href="#Libraries-Crypt-ripemd160">ripemd160</a></li>
-                          <li><a href="#Libraries-Crypt-ripemd256">ripemd256</a></li>
-                          <li><a href="#Libraries-Crypt-ripemd320">ripemd320</a></li>
-                          <li><a href="#Libraries-Crypt-whirlpool">whirlpool</a></li>
-                          <li><a href="#Libraries-Crypt-snefru">snefru</a></li>
-                          <li><a href="#Libraries-Crypt-snefru256">snefru256</a></li>
-                          <li><a href="#Libraries-Crypt-gost">gost</a></li>
-                          <li><a href="#Libraries-Crypt-crc32">crc32</a></li>
-                          <li><a href="#Libraries-Crypt-crc32b">crc32b</a></li>
-                          <li><a href="#Libraries-Crypt-adler32">adler32</a></li>
-                      </ul>
-                  <li>– <a href="#Libraries-Db">Db</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Db-query">query</a></li>
-                          <li><a href="#Libraries-Db-fetch">fetch</a></li>
-                          <li><a href="#Libraries-Db-fetch-where">fetchWhere</a></li>
-                          <li><a href="#Libraries-Db-fetch-or-where">fetchOrWhere</a></li>
-                          <li><a href="#Libraries-Db-fetch-where-in">fetchWhereIn</a></li>
-                          <li><a href="#Libraries-Db-fetch-where-not-in">fetchWhereNotIn</a></li>
-                          <li><a href="#Libraries-Db-fetch-max">fetchMax</a></li>
-                          <li><a href="#Libraries-Db-fetch-min">fetchMin</a></li>
-                          <li><a href="#Libraries-Db-fetch-average">fetchAverage</a></li>
-                          <li><a href="#Libraries-Db-fetch-sum">fetchSum</a></li>
-                          <li><a href="#Libraries-Db-fetch-count">fetchCount</a></li>
-                          <li><a href="#Libraries-Db-insert">insert</a></li>
-                          <li><a href="#Libraries-Db-truncate">truncate</a></li>
-                          <li><a href="#Libraries-Db-delete">delete</a></li>
-                          <li><a href="#Libraries-Db-update">update</a></li>
-                      </ul>
-                  <!-- <li>– <a href="#Libraries-Export">Export</a></li> -->
-                  <li>– <a href="#Libraries-Form">Form</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Form-filter">filter</a></li>
-                          <li><a href="#Libraries-Form-length">length</a></li>
-                          <li><a href="#Libraries-Form-check">check</a></li>
-                          <li><a href="#Libraries-Form-post">post</a></li>
-                          <li><a href="#Libraries-Form-get">get</a></li>
-                          <li><a href="#Libraries-Form-open">open</a></li>
-                          <li><a href="#Libraries-Form-input">input</a></li>
-                              <ul>
-                                  <li><a href="#Libraries-Form-input-hidden">hidden</a></li>
-                                  <li><a href="#Libraries-Form-input-text">text</a></li>
-                                  <li><a href="#Libraries-Form-input-password">password</a></li>
-                                  <li><a href="#Libraries-Form-input-email">email</a></li>
-                                  <li><a href="#Libraries-Form-input-radio">radio</a></li>
-                                  <li><a href="#Libraries-Form-input-checkbox">checkbox</a></li>
-                                  <li><a href="#Libraries-Form-input-submit">submit</a></li>
-                                  <li><a href="#Libraries-Form-input-date">date</a></li>
-                                  <li><a href="#Libraries-Form-input-color">color</a></li>
-                                  <li><a href="#Libraries-Form-input-datetime">datetime</a></li>
-                                  <li><a href="#Libraries-Form-input-datetime-local">datetime-local</a></li>
-                                  <li><a href="#Libraries-Form-input-month">month</a></li>
-                                  <li><a href="#Libraries-Form-input-number">number</a></li>
-                                  <li><a href="#Libraries-Form-input-range">range</a></li>
-                                  <li><a href="#Libraries-Form-input-search">search</a></li>
-                                  <li><a href="#Libraries-Form-input-tel">tel</a></li>
-                                  <li><a href="#Libraries-Form-input-time">time</a></li>
-                                  <li><a href="#Libraries-Form-input-url">url</a></li>
-                                  <li><a href="#Libraries-Form-input-week">week</a></li>
-                              </ul>
-                            <li><a href="#Libraries-Form-label">label</a></li>
-                            <li><a href="#Libraries-Form-legend">legend</a></li>
-                            <li><a href="#Libraries-Form-fieldset-open">fieldset_open</a></li>
-                            <li><a href="#Libraries-Form-fieldset-close">fieldset_close</a></li>
-                            <li><a href="#Libraries-Form-textarea">textarea</a></li>
-                            <li><a href="#Libraries-Form-ul-open">ul_open</a></li>
-                            <li><a href="#Libraries-Form-li">li</a></li>
-                            <li><a href="#Libraries-Form-ul-close">ul_close</a></li>
-                            <li><a href="#Libraries-Form-ol-open">ol_open</a></li>
-                            <li><a href="#Libraries-Form-ol-close">ol_close</a></li>
-                            <li><a href="#Libraries-Form-close">close</a></li>
-                      </ul>
-                  <li>– <a href="#Libraries-Frontend">Frontend</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Frontend-header">header</a></li>
-                          <li><a href="#Libraries-Frontend-aside">aside</a></li>
-                          <li><a href="#Libraries-Frontend-footer">footer</a></li>
-                          <li><a href="#Libraries-Frontend-h">h</a></li>
-                          <li><a href="#Libraries-Frontend-section">section</a></li>
-                          <li><a href="#Libraries-Frontend-nl">nl</a></li>
-                          <li><a href="#Libraries-Frontend-div">div</a></li>
-                          <li><a href="#Libraries-Frontend-div-open">div_open</a></li>
-                          <li><a href="#Libraries-Frontend-div-close">div_close</a></li>
-                          <li><a href="#Libraries-Frontend-link">link</a></li>
-                          <li><a href="#Libraries-Frontend-video">video</a></li>
-                          <li><a href="#Libraries-Frontend-audio">audio</a></li>
-                          <li><a href="#Libraries-Frontend-progress">progress</a></li>
-                          <li><a href="#Libraries-Frontend-p">p</a></li>
-                          <li><a href="#Libraries-Frontend-span">span</a></li>
-                          <li><a href="#Libraries-Frontend-small">small</a></li>
-                          <li><a href="#Libraries-Frontend-code">code</a></li>
-                          <li><a href="#Libraries-Frontend-pre">pre</a></li>
-                          <li><a href="#Libraries-Frontend-blockquote">blockquote</a></li>
-                          <li><a href="#Libraries-Frontend-address">address</a></li>
-                          <li><a href="#Libraries-Frontend-abbr">abbr</a></li>
-                          <li><a href="#Libraries-Frontend-html-5">html5</a></li>
-                          <li><a href="#Libraries-Frontend-load-js">load_js</a></li>
-                          <li><a href="#Libraries-Frontend-load-css">load_css</a></li>
-                          <li><a href="#Libraries-Frontend-meta">meta</a></li>
-                      </ul>
-                  <li>– <a href="#Libraries-Generator">Generator</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Generator-string">string</a></li>
-                          <li><a href="#Libraries-Generator-int">int</a></li>
-                          <li><a href="#Libraries-Generator-string-int">string_int</a></li>
-                      </ul>
-                  <!-- <li>– <a href="#Libraries-Img">Img</a></li> -->
-                  <!-- <li>– <a href="#Libraries-Mail">Mail</a></li> -->
-                  <li>– <a href="#Libraries-Math">Math</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Math-">multiply</a></li>
-                          <li><a href="#Libraries-Math-divide">divide</a></li>
-                          <li><a href="#Libraries-Math-degree">degree</a></li>
-                          <li><a href="#Libraries-Math-S">S</a></li>
-                          <li><a href="#Libraries-Math-P">P</a></li>
-                          <li><a href="#Libraries-Math-factorial">factorial</a></li>
-                          <li><a href="#Libraries-Math-permutations">permutations</a></li>
-                          <li><a href="#Libraries-Math-combinations">combinations</a></li>
-                          <li><a href="#Libraries-Math-variations">variations</a></li>
-                          <li><a href="#Libraries-Math-probabilities">probabilities</a></li>
-                          <li><a href="#Libraries-Math-log">log</a></li>
-                          <li><a href="#Libraries-Math-log10">log10</a></li>
-                          <li><a href="#Libraries-Math-fibonacci">fibonacci</a></li>
-                      </ul>
-                  <!-- <li>– <a href="#Libraries-Security">Security</a></li> -->
-                  <li>– <a href="#Libraries-Session">Session</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Session-set">set</a></li>
-                          <li><a href="#Libraries-Session-init">init</a></li>
-                          <li><a href="#Libraries-Session-get">get</a></li>
-                          <li><a href="#Libraries-Session-destroy">destroy</a></li>
-                      </ul>
-                  <!-- <li>– <a href="#Libraries-Text">Text</a></li> -->
-                  <li>– <a href="#Libraries-Url">Url</a></li>
-                      <ul>
-                          <li><a href="#Libraries-Url-component">component</a></li>
-                          <li><a href="#Libraries-Url-current">current</a></li>
-                          <li><a href="#Libraries-Url-base">base</a></li>
-                          <li><a href="#Libraries-Url-redirect">redirect</a></li>
-                      </ul>
-                </ul>
-            
-                <a href="#Routing">Routing</a><br>
-                <a href="#Database">Database</a><br>
-                <a href="#Smooth-generator"><b>Smooth Generator</b></a><br>
-                <!-- <a href="#Errors-handler">Errors handler</a><br> -->
-                <!-- <a href="#Loader">Loader</a><br> -->
-                <a href="#Template-system">Template System</a><br>
-                <a href="#System">System</a><br>
-                <a href="#App">App</a><br>
-                
+            </section>
+       
           </aside>
-          <br>
-          <br>
-          <br>
-          <br>
+          <br><br><br><br>
           <section id="docs" class="container-narrow">
               
               <div id="Get-started">
@@ -324,31 +192,20 @@
                   <p>Smooth is a new and sparkling PHP framework who is trying to ease and quicken your work process, because we now that writing faster is really important to all developers.</p>
               </div>
               
-              <div id="Change-log">
-                  <div class="page-header">
-                      <h3 class="muted">Change Log</h3>
-                  </div>
-                  <p>This is our first version so everything is sparkling new.</p>
-              </div>
-              
               <div id="Requirements">
                   <div class="page-header">
                       <h3 class="muted">Requirements</h3>
                   </div>
-                  <p>Smooth PHP is requiring only Apache and SQL server(if you want to use databases) plus PHP version greater or equal to 5.3.0.</p>
+                  <p>Smooth PHP is requiring only Apache and SQL server(if you want to use databases) plus PHP version greater or equal to 5.3.0. In order to use all features you need to install some additional extensions.</p>
               </div>
               
-              <div id="Installation">
+              <div id="InstallationConfig">
                   <div class="page-header">
-                      <h3 class="muted">Installation</h3>
+                      <h3 class="muted">Installation and Configuration</h3>
                   </div>
-                  <p>Everything is that simple. You just have to put all the Smooth files to your server, usually index.php is in your root directory; In order to configure your database connection you have to run the file named Database.php in Smooth/database folder and fill your server connection.</p>
-              </div>
-              
-              <div id="Configuration">
-                  <div class="page-header">
-                      <h3 class="muted">Configuration</h3>
-                  </div>
+                  <p>Everything is that simple. You just have to put all the Smooth files to your server, usually index.php is in your root directory; In order to run your App open the <b>Application/config</b> folder and edit the config files. The most important one is called routes.php where you need to change the url value to the one where your Smooth directory is based. <br><br>
+                    <b>Example: <br> If Smooth is based on localhost/htdocs/Smooth your 'url' value should be: '/Smooth/' <br> If Smooth is based on localhost/htdocs/Try/One/Two your 'url' value should be: '/Try/One/Two'</b>
+                  </p>
               </div>
               
               <div id="Variables">
@@ -366,7 +223,7 @@
                       <p>Path to your project optimized for web usage</p>
                   <h4 id="Variables-Controller">CONTROLLER</h4>
                       <p>The name of your base controller</p>
-                  <h4 id="Variables-Smooth-v">SMOOTH_V</h4>
+                  <h4 id="Variables-Smooth-v">SMOOTH_VERSION</h4>
                       <p>The version of Smooth you are using</p>
               </div>
               
@@ -377,12 +234,12 @@
                   
                   <h4 id="Mvc-Model">Model</h4>
                       <p>The models are PHP files, designed to work with database information. Here is a sample model:</p>
-                      <pre class="prettyprint" id="PHP"><ol class="linenums"><li class="L0"><span class="dec">&lt;&#63;php</span></li><li class="L1"><span class="pln"></span> use Smooth\Libraries\Db;</li><li class="L2"><span class="pln"> </span><span>class SampleModel extends Model {</span></li><li class="L3"><span class="pln">  </span><span>public function fetch_users() {</span></li><li class="L4"><span class="pln">   </span><span>return Db::fetch('users');</span></li><li class="L5"><span class="pln">  </span><span>}</span></li><li class="L6"><span class="pln"> </span><span>}</span></li><li class="L7">&#63;&gt;</li></ol></pre>
+                      <pre class="prettyprint" id="PHP"><ol class="linenums"><li class="L0"><span class="dec">&lt;&#63;php</span></li><li class="L1"><span class="pln"></span> use Smooth\Libraries\Db;</li><li class="L2"><span class="pln"> </span><span>class SampleModel extends Smooth\Model {</span></li><li class="L3"><span class="pln">  </span><span>public function fetch_users() {</span></li><li class="L4"><span class="pln">   </span><span>return Db::fetch('users');</span></li><li class="L5"><span class="pln">  </span><span>}</span></li><li class="L6"><span class="pln"> </span><span>}</span></li><li class="L7">&#63;&gt;</li></ol></pre>
                   <h4 id="Mvc-View">View</h4>
                       <p>The views are PHP files which are responsible for presenting the final information to the users. These pages can be different parts(header,section,nav,footer,sidebar) or entire web pages. The choice is completely yours. The views can contain any information you want to.</p>
                   <h4 id="Mvc-Controller">Controller</h4>
                       <p>The controllers are PHP files linked with defined url. So if you want to get to the home view of your site you should http://mysite.com/home which is equal to http://mysite.com/index.php/home. Here is one sample controller:</p>
-                      <pre class="prettyprint" id="PHP"><ol class="linenums"><li class="L0"><span class="dec">&lt;&#63;php</span></li><li class="L1"><span class="pln"> </span><span>class SampleController extends Controller {</span></li><li class="L2"><span class="pln">  </span><span>public function index() {</span></li><li class="L3"><span class="pln">   </span><span>$data['content'] = 'WelcomeSmoothView';</span></li><li class="L4"><span class="pln">   </span><span>$this->render('includes/template', compact('data'));</span></li><li class="L5"><span class="pln">  </span><span>}</span></li><li class="L6"><span class="pln"> </span><span>}</span></li><li class="L7">&#63;&gt;</li></ol></pre>
+                      <pre class="prettyprint" id="PHP"><ol class="linenums"><li class="L0"><span class="dec">&lt;&#63;php</span></li><li class="L1"><span class="pln"> </span><span>class SampleController extends Smooth\Controller {</span></li><li class="L2"><span class="pln">  </span><span>public function index() {</span></li><li class="L3"><span class="pln">   </span><span>$data['content'] = 'WelcomeSmoothView';</span></li><li class="L4"><span class="pln">   </span><span>$this->render('includes/template', compact('data'));</span></li><li class="L5"><span class="pln">  </span><span>}</span></li><li class="L6"><span class="pln"> </span><span>}</span></li><li class="L7">&#63;&gt;</li></ol></pre>
               </div>
               
               <div id="Libraries">
@@ -407,27 +264,8 @@
                         <p>Crypting using any of the listed methods is complete by using this one:</p>
                         <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>Crypt::crypter('method','my_super_secret_password');</span></li></ol></pre>
                         <p>So if you are still wondering how to use our Crypt library here is an example using <b>whirlpool</b> algorithm:</p>
-                        <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>Crypt::crypter("whirpool", "string")</span></li></ol></pre>
-                        <p>It is the same with the rest of the algorithms.</p>
-                          <h5 id="Libraries-Crypt-sha1" class="muted">sha1(string)</h5>
-                          <h5 id="Libraries-Crypt-sha224" class="muted">sha224(string)</h5>
-                          <h5 id="Libraries-Crypt-sha256" class="muted">sha256(string)</h5>
-                          <h5 id="Libraries-Crypt-sha384" class="muted">sha384(string)</h5>
-                          <h5 id="Libraries-Crypt-sha512" class="muted">sha512(string)</h5>
-                          <h5 id="Libraries-Crypt-md2" class="muted">md2(string)</h5>
-                          <h5 id="Libraries-Crypt-md4" class="muted">md4(string)</h5>
-                          <h5 id="Libraries-Crypt-md5" class="muted">md5(string)</h5>
-                          <h5 id="Libraries-Crypt-ripemd128" class="muted">ripemd128(string)</h5>
-                          <h5 id="Libraries-Crypt-ripemd160" class="muted">ripemd160(string)</h5>
-                          <h5 id="Libraries-Crypt-ripemd256" class="muted">ripemd256(string)</h5>
-                          <h5 id="Libraries-Crypt-ripemd320" class="muted">ripemd320(string)</h5>
-                          <h5 id="Libraries-Crypt-whirlpool" class="muted">whirlpool(string)</h5>
-                          <h5 id="Libraries-Crypt-snefru" class="muted">snefru(string)</h5>
-                          <h5 id="Libraries-Crypt-snefru256" class="muted">snefru256(string)</h5>
-                          <h5 id="Libraries-Crypt-gost" class="muted">gost(string)</h5>
-                          <h5 id="Libraries-Crypt-crc32" class="muted">crc32(string)</h5>
-                          <h5 id="Libraries-Crypt-crc32b" class="muted">crc32b(string)</h5>
-                          <h5 id="Libraries-Crypt-adler32" class="muted">adler32(string)</h5>
+                        <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>Crypt::crypter("whirpool", "string");</span></li></ol></pre>
+                        <p>It is the same with the rest of the algorithms: <b>'sha1', 'sha224', 'sha256', 'sha384', 'sha512', 'md2', 'md4', 'md5', 'ripemd128', 'ripemd160', 'ripemd256','ripemd320', 'whirlpool', 'snefru', 'snefru256', 'gost', 'crc32', 'crc32b', 'adler32'</b>.</p>
                      <h4 id="Libraries-Db">Db</h4>
                       <p>Use of <b>Db</b> class to smoothen your work process with databases. Smooth is using <b>PDO</b>, however you will not be pushed to write SQL queries if you don't want to. Load it with:</p>
                         <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>use Smooth\Libraries\Db;</span></li></ol></pre>
@@ -752,7 +590,7 @@
                           <p>Returning the base url of the App. </p>
                             <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>Url::base() //equal to the WEBPATH variable</span></li></ol></pre>
                         <h5 id="Libraries-Url-redirect" class="muted">redirect(url)</h5>
-                          <p>A additional functino for redirecting the user to another location.</p>
+                          <p>A additional function for redirecting the user to another location.</p>
                             <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>Url::redirect('http://smoothphp.com');</span></li></ol></pre>
               </div>
 
@@ -760,28 +598,51 @@
                   <div class="page-header">
                       <h3 class="muted">Routing</h3>
                   </div>
-                <p>Smooth Routing system is pretty simple. For example if you want to load the home controller, add function and pass an id in order to run your func() propertly you need to run the above in your browser.</p>
+                  
                   <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>http://smoothphp.com/home/add/5</span></li><li class="L1">//equal to whatever url you are using + localhost</li><li class="L2"><span>http://localhost/home/add/5</span></li></ol></pre>
-                <p>If you want to change the name of your default system or app folder you need to open the index.php file of Smooth PHP Framework which is located into the project folder and look at lines 35, 36, 37, the variables are called system_path, app_path, web_path.</p>
-                <p class="text-error">Be careful and check if the given names are equal.</p>
-                <p>In case you want to change your default controller open the same index.php file and look at line 38, the var is called <b>base_controller</b></p>
-                  <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>$system_path = 'Smooth';</span></li><li class="L1">$app_path = 'Application';</li><li class="L2"><span>$web_path = 'Smooth';</span></li><li class="L3"><span>$base_controller = 'welcome';</span></li></ol></pre>
+                  
+                  <div id="Routing-Default">
+                    <p>The default Smooth routing system is currently in beta test mode as we are updating all core files. The example above will direct you to the home controller, add function and it will asign 5 as a param to the func(). Smooth is using this one in order to provide clean urls.</p>
+                  </div>
+
+                  <div id="Routing-Custom">
+                    <p>The custom routing system can be set in <b>Application/config/routes.php</b> as we are testing it. The limit is one rewritten url. It will be changed as soon as possible.</p>
+                  </div>
               </div>
               
               <div id="Database">
                   <div class="page-header">
                       <h3 class="muted">Database</h3>
                   </div>
-                    <p>The <b>Database</b> module of Smooth is of great importance. In most cases you will need to set up your database server connection. In order to complete this step find the file called Database.php, located into the Smooth system folder, database folder. Here is the full path:</p>
-                      <pre class="prettyprint" id="PHP"><ol class="linemums"><li class="L0"><span>Smooth/database/Database.php</span></li></ol></pre>
+
+                  <div id="Database-Configuration">
+                    <h4>Configuration</h4>
+                      <p>The <b>Database</b> module of Smooth is of great importance. In most cases you will need to set up your database server connection. In order to complete this step find the file called database.php, located into the Smooth system folder, database folder and edit the file with your server connection details.</p>
+                  </div>
+
+                  <div id="Database-Connection">
+                    <h4>Connection</h4>
+                      <p>Smooth is using PDO database connection, which implies one type of connection with 12 different drivers. All you need to do is just follow the step above.</p>
+                  </div>
+
+                  <div id="Database-Quiries">
+                    <h4>Quiries</h4>
+                      <p>We are using Structured Query Language knows as SQL, so there is nothing different or special if you want to write your queries by your own.</p>
+                  </div>
+                  
+                  <div id="Database-Library">
+                    <h4>Library</h4>
+                      <p>A library is included into our package, which is great help when the developer wants to fetch the data easy and with just a line of code. Check it out now.</p>
+                  </div>
+
               </div>
-              
+<!--               
               <div id="Smooth-generator">
                   <div class="page-header">
                       <h3 class="muted">Smooth Generator</h3>
                   </div>
                   <p>Our <b>Smooth Generator</b> module will be included into the next stable version of Smooth PHP Framework. All in all it would be helpful to all developers when writing their code.</p>
-              </div>
+              </div> -->
               
               <!-- <div id="Errors-handler">
                   <div class="page-header">
@@ -789,7 +650,7 @@
                   </div>
               </div>
               
-              <div id="Loader">
+              <div id="Loader"> 
                   <div class="page-header">
                       <h3 class="muted">Loader</h3>
                   </div>
@@ -800,30 +661,67 @@
                       <h3 class="muted">Template System</h3>
                   </div>
                     <p>Our custom template system integrated into the Smooth version is pretty simple and quite flexible. The main files can be found onto this path <b>Application/views/includes/</b>. There are three files <b>header.php</b>, <b>footer.php</b> and <b>template.php</b>. How to use the template system? Here is an example:</p>
-                      <pre class="prettyprint" id="PHP"><ol class="linenums"><li class="L0"><span class="dec">&lt;&#63;php</span></li><li class="L1"><span class="pln"> </span><span>class SampleController extends Controller {</span></li><li class="L2"><span class="pln">  </span><span>public function index() {</span></li><li class="L3"><span class="pln">   </span><span>$data['content'] = 'WelcomeSmoothView';</span></li><li class="L4"><span class="pln">   </span><span>$this->render('includes/template', compact('data'));</span></li><li class="L5"><span class="pln">  </span><span>}</span></li><li class="L6"><span class="pln"> </span><span>}</span></li><li class="L7">&#63;&gt;</li></ol></pre>
+                      <pre class="prettyprint" id="PHP"><ol class="linenums"><li class="L0"><span class="dec">&lt;&#63;php</span></li><li class="L1"><span class="pln"> </span><span>class SampleController extends Smooth\Controller {</span></li><li class="L2"><span class="pln">  </span><span>public function index() {</span></li><li class="L3"><span class="pln">   </span><span>$data['content'] = 'WelcomeSmoothView';</span></li><li class="L4"><span class="pln">   </span><span>$this->render('includes/template', compact('data'));</span></li><li class="L5"><span class="pln">  </span><span>}</span></li><li class="L6"><span class="pln"> </span><span>}</span></li><li class="L7">&#63;&gt;</li></ol></pre>
                     <p>In this way you will load the view called WelcomeSmoothView and pass all the vars associated with the $data. In case you want to pass more vars containing some information you need to use this way:</p>
                       <pre class="prettyprint" id="PHP"><ol class="linenums"><li class="L0"><span>$data['my_var'] = 'my-information';</span></li><li class="L1"></span><span>$data['content'] = 'WelcomeSmoothView';</span></li><li class="L4"><span>$this->render('includes/template', compact('data'));</span></li></ol></pre>
                     <p>In your view file you can retain the data form the variable by just write its name with a $ sign in front.</p>
                       <pre class="prettyprint" id="PHP"><ol class="linenums"><li class="L0"><span>echo $my_var; //Will output my-information</span></li></ol></pre>
               </div>
               
-              <div id="System">
-                  <div class="page-header">
-                      <h3 class="muted">System</h3>
+              <div id="Application">
+                <div class="page-header">
+                  <h3 class="muted">Application</h3>
+                </div>
+                
+                  <div id="Application-Configuration">
+                    <h4>Configuration</h4>
+                      <p>All the needed configurations that the developer worth looking @ are based into the Application/config folder. All is that simple.</p>
                   </div>
-                  <p>By default our system folder is called <b>Smooth</b> and it contains all the information needed to use all the functions of Smooth PHP Framework. As it was explained above you can rename the folder as you wish.</p>
-                  <p class="text-error">Note: Don't remove any of the files included into the package unless you are sure it won't prevent the system.</p>
-              </div>
-              
-              <div id="App">
-                  <div class="page-header">
-                      <h3 class="muted">App</h3>
+
+                  <div id="Application-App">
+                    <h4>App</h4>
+                      <p>The app folder is by default named <b>Application</b>. There are all your user config files, controllesr, views, models and so on.</p>
                   </div>
-                  <p>Our app folder is called <b>Application</b> and it contains all the user files. Mostly is used to handle the MVC files(Models, Views, Controllers).</p>
+
+                  <div id="Application-System">
+                    <h4>System</h4>
+                      <p>The system folder contains all the needed files for Smooth to run properly. Please do not delete or change any files unless you know what you are actually doing.</p>
+                  </div>
+
+                  <div id="Application-Public">
+                    <h4>Public</h4>
+                      <p>The public folder contains all the css, js and image files. The directory is not protected with any .htaccess, .php or .html files.</p>
+                  </div>
+                  
+                  <div id="Application-Tests">
+                    <h4>Tests</h4>
+                      <p>Our framework is packaged with some tests provided as we believe that every meaningful and well-structured application should imply tests. The Tests and vendor folders plus composer.json file and the phpunit.xml file are needed for running the suite with PHPUnit.</p>
+                  </div>
+
               </div>
-              
+
           </section>
-          
+          <aside>
+            <a href="#top" title="Scroll back to the top">Back to the top</a>
+          </aside>
+          <script src="bootstrap/js/jquery-1.9.1.min.js"></script>
+          <script src="bootstrap/js/bootstrap.min.js"></script>
+          <script src="bootstrap/js/bootstrap-dropdown.js"></script>
           <script src="google-code-prettify/prettify.js"></script>
+          <script type="text/javascript">
+            $(document).ready( function() {
+              $('.dropdown-toggle').dropdown();
+            });
+          </script>
+          <script type="text/javascript">
+            $(document).ready(function() {
+
+                $('a[href=#top]').click(function(){
+                    $('html, body').animate({scrollTop:0}, 'slow');
+                    return false;
+                });
+
+            });
+          </script>
         </body>    
     </html>
